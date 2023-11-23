@@ -18,6 +18,7 @@ import Post from "./models/Post.js";
 import { users, posts } from "./data/index.js";
 import { verifyToken } from "./middleware/auth.js";
 
+
 /* CONFIG */
 
 const __filename = fileURLToPath(import.meta.url);
