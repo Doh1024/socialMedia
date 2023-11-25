@@ -35,6 +35,16 @@ app.use(cors());
 app.use("/assets", express.static(path.join(__dirname, 'public/assets')));
 
 
+app.use(
+  cors({
+    origin: "https://social-media-front-omega.vercel.app/",
+    methods: ["POST", "GET"],
+    credentials: true,
+  })
+);
+app.use("/assets", express.static(path.join(__dirname, "public/assets")));
+
+
 /* FILE */
 
 const storage = multer.diskStorage({
